@@ -1,0 +1,11 @@
+{
+    "name": "hello-npm",
+    "version": "1.0.0",
+    "description": "Hello NPM",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Info: no test specified\" && exit 0"
+    },
+    "author": "test",
+    "license": "ISC"
+}
