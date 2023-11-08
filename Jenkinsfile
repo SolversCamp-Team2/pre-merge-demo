@@ -211,10 +211,14 @@ private String getMergeBody() {
 * Gets the env variable value
 */
 private String getEnvValue(String envKey, String defaultValue='') {
+    echo "step1"
 	String envValue = defaultValue
 	def envMap = env.getEnvironment()
+    echo "step2"
 	envMap.each{ key, value ->
+    echo "step3"
 		if (key == envKey) {
+            echo "step4"
 			envValue = !isEmpty(value) ? value : defaultValue
 			return envValue
 		}
